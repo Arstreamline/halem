@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H.A.L. High School and Junior College</title>
+    <style>
+        /* General Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Logo Styling */
+        .logo img {
+            height: 100px; /* Adjust based on your logo size */
+            width: auto;
+            margin-bottom: 5px;
+        }
+
+        /* Text Styling */
+        .school-info h4 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: normal;
+            color: #000;
+        }
+
+        .school-info h1 {
+            margin: 5px 0;
+            font-size: 28px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #000;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+        }
+
+        .school-info p {
+            margin: 2px 0;
+            font-size: 14px;
+            color: #000;
+        }
+
+        /* Divider Line */
+        hr {
+            border: 0;
+            border-top: 1px solid #000;
+            width: 95%;
+            margin: 10px auto;
+        }
+
+        /* Navigation Bar Styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 40px; /* Space between buttons */
+            padding: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        /* Dropdown Container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Main Buttons Style */
+        .dropbtn {
+            background-color: #f0f0f0;
+            color: black;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 200px; /* Fixed width for uniformity */
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            transition: background-color 0.3s;
+        }
+
+        .dropbtn:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            top: 100%; /* Position below the button */
+            left: 0;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 15px;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <!-- NOTE: Replace 'YOUR_LOGO_IMAGE_URL_HERE' with the actual path to your logo image -->
+        <div class="logo">
+             <img src="YOUR_LOGO_IMAGE_URL_HERE" alt="School Logo">
+        </div>
+        
+        <div class="school-info">
+            <h4>Gokhale Education Society's</h4>
+            <h1>H.A.L. HIGH SCHOOL AND JUNIOR COLLEGE</h1>
+            <p>Ozar Township, Tal : Niphad, Dist : Nashik, State : Maharashtra</p>
+            <p>Phone No. : 02550 278667 Mail ID : halemschool@gmail.com</p>
+            <p>ISO 9001 : 2015 Certified School</p>
+        </div>
+    </header>
+
+    <hr>
+
+    <!-- Navigation Buttons Section -->
+    <nav class="navbar">
+
+        <!-- Button 1: Data Entry -->
+        <div class="dropdown">
+            <button class="dropbtn">Data Entry</button>
+            <div class="dropdown-content">
+                <a href="primary.html">Primary</a>
+                <a href="highschool.html">High school</a>
+                <a href="juniorcollege.html">Junior College</a>
+            </div>
+        </div>
+
+        <!-- Button 2: Students Search -->
+        <div class="dropdown">
+            <button class="dropbtn">Students Search</button>
+            <div class="dropdown-content">
+                <a href="primary_search.html">Primary</a>
+                <a href="highschool_search.html">High school</a>
+                <a href="juniorcollege_search.html">Junior College</a>
+            </div>
+        </div>
+
+        <!-- Button 3: LC Print -->
+        <div class="dropdown">
+            <button class="dropbtn">LC Print</button>
+            <div class="dropdown-content">
+                <a href="primary_lc.html">Primary</a>
+                <a href="highschool_lc.html">High school</a>
+                <a href="juniorcollege_lc.html">Junior College</a>
+            </div>
+        </div>
+
+        <!-- Button 4: Index Page -->
+        <div class="dropdown">
+            <button class="dropbtn">Index Page</button>
+            <div class="dropdown-content">
+                <a href="primary_index.html">Primary</a>
+                <a href="highschool_index.html">High school</a>
+                <a href="juniorcollege_index.html">Junior College</a>
+            </div>
+        </div>
+
+    </nav>
+
+</body>
+</html>
